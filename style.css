@@ -24,7 +24,7 @@ body {
 
 button {
   padding: 10px 20px;
-  background-color: #f3f5f76c;
+  background-color: #ff9f9f8f;
   color: black;
   /* border: none; */
   cursor: pointer;
@@ -43,3 +43,32 @@ button.next {
   top: 50%;
   transform: translateY(-50%);
 }
+
+
+
+#bigImage {
+  max-width: 100%;
+  height: auto;
+  /* position: relative; */
+}
+
+#smallImage {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  animation: moveSmallImage 10s infinite linear;
+}
+
+@keyframes moveSmallImage {
+  0%, 100% {
+    left: 0;
+  }
+  50% {
+    left: calc(70% - 50px);
+  }
+}
+
+
